@@ -1,4 +1,5 @@
 const path = require('path');
+
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
@@ -8,12 +9,18 @@ const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
-    mode: "production",
+    mode: "development",
     devServer: {
-        static: {directory: path.join(__dirname, './dist')},
-        hot: false,
+        static: {
+            directory: path.join(__dirname, './dist')
+        },
+        historyApiFallback: true,
+        open: true,
+        compress: true,
+        hot: true,
+        port: 8080,
     },
-    devtool: false,
+    devtool: 'inline-source-map',
     output: {
         filename: "main.js"
     },

@@ -1,0 +1,12 @@
+{
+  "contacts": [
+    { "id": 1, "name": "Yahor", "email": "yahor@mail.ru", "phone": "+765463634" },
+    { "id": 1, "name": "Stas", "email": "stas@mail.ru", "phone": "+76546" },
+    { "id": 1, "name": "Ihor", "email": "ihor@mail.ru", "phone": "+76546634" },,
+    { "id": 1, "name": "Roma", "email": "roma@mail.ru", "phone": "+765463634" },
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
